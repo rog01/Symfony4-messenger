@@ -11,5 +11,15 @@ namespace App\Message;
 
 class AddPonkaToImage
 {
+    private $imagePost;
 
+    public function __construct($imagePost)
+    {
+        $this->imagePost = $imagePost;
+    }
+
+    public function getImagePost()
+    {
+        return $this->imagePost;
+    }
 }
